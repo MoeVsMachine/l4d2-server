@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+
+#1 l4d2_1
+  l4d2_1:
+   container_name: "l4d2_1"
+   image: "l4d2:dev"
+   restart: unless-stopped
+   volumes:
+    - /home/game/l4d2/server/:/home/steam/tf-dedicated/
+   environment:
+    - "SRCDS_PORT=27033"
+    - "SRCDS_CLIENT_PORT=27133"
+    - "SRCDS_STARTMAP=mvm_ghost_town"
+    - "SRCDS_IP=167.235.173.220"
+    - "SRCDS_CFG=l4d2_1.cfg"
+    - "SRCDS_MAXPLAYERS=8"
+   ports:
+    - "167.235.173.220:27033:27033"
+    - "167.235.173.220:27033:27033/udp"
+    - "167.235.173.220:27133:27133"
+   network_mode: "host"
+   stdin_open: true
+   tty: true
+
