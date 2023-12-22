@@ -7,7 +7,7 @@ services:
    image: "l4d2:dev"
    restart: unless-stopped
    volumes:
-    - /home/game/l4d2/server/:/home/left4dead2/tf-dedicated/
+    - /home/game/l4d2/server/:/home/steam/left4dead2-dedicated/
    environment:
     - "SRCDS_PORT=27033"
     - "SRCDS_CLIENT_PORT=27133"
