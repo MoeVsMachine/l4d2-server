@@ -15,10 +15,6 @@ services:
     - "SRCDS_IP=167.235.173.220"
     - "SRCDS_CFG=l4d2_1.cfg"
     - "SRCDS_MAXPLAYERS=8"
-   ports:
-    - "167.235.173.220:27033:27033"
-    - "167.235.173.220:27033:27033/udp"
-    - "167.235.173.220:27133:27133"
    network_mode: "host"
    stdin_open: true
    tty: true
@@ -37,10 +33,6 @@ services:
     - "SRCDS_IP=167.235.173.220"
     - "SRCDS_CFG=l4d2_2.cfg"
     - "SRCDS_MAXPLAYERS=8"
-   ports:
-    - "167.235.173.220:27033:27033"
-    - "167.235.173.220:27033:27033/udp"
-    - "167.235.173.220:27133:27133"
    network_mode: "host"
    stdin_open: true
    tty: true
@@ -59,10 +51,6 @@ services:
     - "SRCDS_IP=167.235.173.220"
     - "SRCDS_CFG=l4d2_3.cfg"
     - "SRCDS_MAXPLAYERS=8"
-   ports:
-    - "167.235.173.220:27033:27033"
-    - "167.235.173.220:27033:27033/udp"
-    - "167.235.173.220:27133:27133"
    network_mode: "host"
    stdin_open: true
    tty: true
@@ -81,10 +69,6 @@ services:
     - "SRCDS_IP=167.235.173.220"
     - "SRCDS_CFG=l4d2_4.cfg"
     - "SRCDS_MAXPLAYERS=8"
-   ports:
-    - "167.235.173.220:27033:27033"
-    - "167.235.173.220:27033:27033/udp"
-    - "167.235.173.220:27133:27133"
    network_mode: "host"
    stdin_open: true
    tty: true
