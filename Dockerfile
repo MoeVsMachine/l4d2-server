@@ -10,6 +10,7 @@ ENV STEAMAPP l4d2
 ENV STEAMAPPDIR "${HOMEDIR}/${STEAMAPP}-dedicated"
 ENV DLURL https://github.com/MoeVsMachine/l4d2-server
 
+COPY entry.sh ${HOMEDIR}/entry.sh
 RUN set -x \
         # Add i386 architecture
         && dpkg --add-architecture i386 \
