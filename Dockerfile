@@ -36,7 +36,7 @@ RUN set -x \
 
         && mkdir -p "${STEAMAPPDIR}" \
         # Add entry script
-        && wget "${DLURL}/master/etc/entry.sh" -O "${HOMEDIR}/entry.sh" \
+        #&& wget "${DLURL}/master/etc/entry.sh" -O "${HOMEDIR}/entry.sh" \
         # Create autoupdate config
         && { \
                 echo '@ShutdownOnFailedCommand 1'; \
