@@ -3,12 +3,12 @@
 ###########################################################
 FROM cm2network/steamcmd:root
 
-LABEL maintainer="walentinlamonos@gmail.com"
+#LABEL maintainer="walentinlamonos@gmail.com"
 
 ENV STEAMAPPID 222860
 ENV STEAMAPP l4d2
 ENV STEAMAPPDIR "${HOMEDIR}/${STEAMAPP}-dedicated"
-ENV DLURL https://raw.githubusercontent.com/Gnomesenpai/TF2-docker
+ENV DLURL https://github.com/MoeVsMachine/l4d2-server
 
 RUN set -x \
         # Add i386 architecture
