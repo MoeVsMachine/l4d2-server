@@ -47,7 +47,7 @@ services:
 
 #3 l4d2_3
   l4d2_3:
-   container_name: "l4d2_1"
+   container_name: "l4d2_3"
    image: "l4d2:dev"
    restart: unless-stopped
    volumes:
