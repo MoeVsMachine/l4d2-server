@@ -33,7 +33,6 @@ RUN set -x \
                 nasm \
                 libiberty-dev:i386 libelf-dev:i386 libboost-dev:i386 libbsd-dev:i386 libunwind-dev:i386 lib32z1-dev libc6-dev-i386 linux-libc-dev:i386 g++-multilib \
                 curl file  bsdmainutils python3 util-linux binutils bc jq netcat lib32gcc-s1 lib32stdc++6 libcurl4-gnutls-dev:i386 \
-
         && mkdir -p "${STEAMAPPDIR}" \
         # Add entry script
         #&& wget "${DLURL}/master/etc/entry.sh" -O "${HOMEDIR}/entry.sh" \
