@@ -6,7 +6,7 @@ FROM cm2network/steamcmd:root
 #LABEL maintainer="walentinlamonos@gmail.com"
 
 ENV STEAMAPPID 222860
-ENV STEAMAPP l4d2
+ENV STEAMAPP left4dead2
 ENV STEAMAPPDIR "${HOMEDIR}/${STEAMAPP}-dedicated"
 ENV DLURL https://github.com/MoeVsMachine/l4d2-server
 

@@ -11,7 +11,7 @@ services:
    environment:
     - "SRCDS_PORT=27033"
     - "SRCDS_CLIENT_PORT=27133"
-    - "SRCDS_STARTMAP=mvm_ghost_town"
+    - "SRCDS_STARTMAP=c2m1_highway"
     - "SRCDS_IP=167.235.173.220"
     - "SRCDS_CFG=l4d2_1.cfg"
     - "SRCDS_MAXPLAYERS=8"
