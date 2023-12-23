@@ -72,3 +72,39 @@ services:
    network_mode: "host"
    stdin_open: true
    tty: true
+
+#4 l4d2_5
+  l4d2_5:
+   container_name: "l4d2_5"
+   image: "l4d2:dev"
+   restart: unless-stopped
+   volumes:
+    - /home/game/l4d2/server/:/home/steam/left4dead2-dedicated/
+   environment:
+    - "SRCDS_PORT=27037"
+    - "SRCDS_CLIENT_PORT=27137"
+    - "SRCDS_STARTMAP=c2m1_highway"
+    - "SRCDS_IP=167.235.173.220"
+    - "SRCDS_CFG=l4d2_5.cfg"
+    - "SRCDS_MAXPLAYERS=8"
+   network_mode: "host"
+   stdin_open: true
+   tty: true
+
+#4 l4d2_6
+  l4d2_6:
+   container_name: "l4d2_6"
+   image: "l4d2:dev"
+   restart: unless-stopped
+   volumes:
+    - /home/game/l4d2/server/:/home/steam/left4dead2-dedicated/
+   environment:
+    - "SRCDS_PORT=27038"
+    - "SRCDS_CLIENT_PORT=27138"
+    - "SRCDS_STARTMAP=c2m1_highway"
+    - "SRCDS_IP=167.235.173.220"
+    - "SRCDS_CFG=l4d2_6.cfg"
+    - "SRCDS_MAXPLAYERS=8"
+   network_mode: "host"
+   stdin_open: true
+   tty: true
